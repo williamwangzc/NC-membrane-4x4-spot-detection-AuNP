@@ -61,6 +61,18 @@ analyte, and writes `_analyte_intensity.csv`. Intensity is defined as
 `ref_avg - signal_avg`, because the G-channel value decreases as the colorimetric
 signal strengthens.
 
+## Examples
+
+The `examples/` folder contains representative samples:
+
+- `input/`: original membrane photos.
+- `output/`: detection result images (`*_v3_result.png`), red-vs-green
+  comparison images (`*_v3_compare.png`), and per-spot RGB tables
+  (`*_v3_spot_rgb.csv`).
+
+Calibration samples are named by concentration (e.g. `0`, `100`);
+`thermal_0` and `thermal_100` are thermal-embossing membrane samples.
+
 ## Algorithm Overview
 
 1. **Coarse localization (Stage A):** Hough circle detection on a
